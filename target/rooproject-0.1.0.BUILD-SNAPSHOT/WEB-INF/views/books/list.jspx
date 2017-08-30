@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_rooproject_domain_Book" items="${books}" z="FHjFjoRNCpYkQmXiAPbs352ddc4=">
+        <table:table data="${books}" id="l_com_rooproject_domain_Book" path="/books" z="4KYFAPaIo9PbH6+SjIHMQyviTBQ=">
+            <table:column id="c_com_rooproject_domain_Book_BookID" property="bookID" z="kYMGUH1HzWD5JdKhsomXofsVqiw="/>
+            <table:column id="c_com_rooproject_domain_Book_title" property="title" z="PYlOgrpfjMBcRYFYKM9G1q4y1Ec="/>
+            <table:column id="c_com_rooproject_domain_Book_Author" property="author" z="jcdHtxbDFjbRbnnFbwVsuBqG5yA="/>
+            <table:column id="c_com_rooproject_domain_Book_ISBN" property="ISBN" z="K7t5p3FE37DEpbjq+RHujoggLhg="/>
+        </table:table>
+    </page:list>
+</div>

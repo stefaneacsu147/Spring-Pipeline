@@ -1,0 +1,42 @@
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2017-08-30 12:43:15
+project --topLevelPackage com.rooproject --projectName "rooproject" --java 8 --packaging JAR
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2017-08-30 12:43:16
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2017-08-30 12:43:18
+hint
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY 
+entity jpa --class ~.domain.Book
+field string --fieldName title --notNull
+field string --fieldName author --notNull
+field string --fieldName isbn --notNull
+web mvc setup
+web mvc all --package ~.web
+entity jpa --class ~.domain.Author
+field string --fieldName firstname --notNull
+field string --fieldName surname --notNull
+field date --fieldName birthDate --notNull --type java.util.Date
+help
+hint
+web mvc all --package ~.web
+entity jpa --class ~.domain.Author
+field string --fieldName AuthorID --notNull
+field string --fieldName firstname --notNull
+field string --fieldName surname --notNull
+field date --fieldName birthDate --notNull --type java.util.Date
+help
+web mvc all --package ~.web
+entity jpa --class ~.domain.Book
+field string --fieldName BookID --notNull
+field string --fieldName title --notNull
+web mvc all --package ~.web
+entity jpa --class ~.domain.Book
+field string --fieldName BookID --notNull
+field string --fieldName title --notNull
+field string --fieldName Author --notNull
+field string --fieldName ISBN --notNull
+web mvc all --package ~.web
+entity jpa --class ~.domain.Author
+field string --fieldName AuthorID --notNull
+field string --fieldName firstname --notNull
+field string --fieldName surname --notNull
+field date --fieldName birthDate --notNull --type java.util.Date
+web mvc all --package ~.web

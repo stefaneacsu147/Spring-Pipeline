@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_rooproject_domain_Author" object="${author}" path="/authors" z="hAIOf3Q0EaeFWiMbgtcBx8rfp44=">
+        <field:display field="authorID" id="s_com_rooproject_domain_Author_AuthorID" object="${author}" z="vTDV9T3hqdvIvZbSH/6JgfUxRJ0="/>
+        <field:display field="firstname" id="s_com_rooproject_domain_Author_firstname" object="${author}" z="vqn7a40Yte5WrBLiDFCqhYB++7U="/>
+        <field:display field="surname" id="s_com_rooproject_domain_Author_surname" object="${author}" z="ke3FPyZ1Yd2NIE+QSMatGRi5o3o="/>
+        <field:display date="true" dateTimePattern="${author_birthdate_date_format}" field="birthDate" id="s_com_rooproject_domain_Author_birthDate" object="${author}" z="zmnKWOzsOOjBxOsK9WouQFT+nWg="/>
+    </page:show>
+</div>

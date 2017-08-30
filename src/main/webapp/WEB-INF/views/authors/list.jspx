@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_rooproject_domain_Author" items="${authors}" z="ea5ByMtroVPKs4tg4PXO2/XuwOY=">
+        <table:table data="${authors}" id="l_com_rooproject_domain_Author" path="/authors" z="tihk+V3Uy5KQQIUxzd7CMAzOl7Y=">
+            <table:column id="c_com_rooproject_domain_Author_AuthorID" property="authorID" z="CgFCROHG2fGTzjfp/CB3rXbZQLs="/>
+            <table:column id="c_com_rooproject_domain_Author_firstname" property="firstname" z="8H76qSg/i484k/LvUe+OVTkMOX8="/>
+            <table:column id="c_com_rooproject_domain_Author_surname" property="surname" z="jP5SpFfa2jpkOoC4Ve5MwYsbYAo="/>
+            <table:column date="true" dateTimePattern="${author_birthdate_date_format}" id="c_com_rooproject_domain_Author_birthDate" property="birthDate" z="BnqKvcREwBpVjE7HzQ1DCnZamfU="/>
+        </table:table>
+    </page:list>
+</div>
